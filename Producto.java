@@ -8,7 +8,45 @@ public class Producto {
     private int cantidadminima;
     private double precio;
 
+    public String getNombreproducto() {
+        return nombreproducto;
+    }
 
+    public void setNombreproducto(String nombreproducto) {
+        this.nombreproducto = nombreproducto;
+    }
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
+    public int getCantidadproducto() {
+        return cantidadproducto;
+    }
+
+    public void setCantidadproducto(int cantidadproducto) {
+        this.cantidadproducto = cantidadproducto;
+    }
+
+    public int getCantidadminima() {
+        return cantidadminima;
+    }
+
+    public void setCantidadminima(int cantidadminima) {
+        this.cantidadminima = cantidadminima;
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
 
     public Producto(String nombreproducto, String tipo, int cantidadproducto , int cantidadminima, double precio) {
         this.nombreproducto = nombreproducto;
@@ -33,7 +71,20 @@ public class Producto {
 
     }
 
+    public double dineroObtenido(){
 
+        Double dineroTotal;
+
+        dineroTotal = cantidadproducto * precio;
+
+        return dineroTotal;
+
+    }
+
+    public String toStringPromedio() {
+        String p = "la cantidad de dinero obtenida de: " +nombreproducto+ " es un total de: "+ dineroObtenido()+"$";
+        return p;
+    }
     @Override
     public String toString() {
         String p = "Nombre del Producto: " +
@@ -49,5 +100,4 @@ public class Producto {
 
 
 }
-
 
