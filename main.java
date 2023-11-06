@@ -34,19 +34,23 @@ public class Main {
                             case 1: {
                                 System.out.println("1.- Productos de Papeleria");
                                 System.out.println(p1.toString());
+                                System.out.println( "Precio final con IVA:"+p1.precioPapeleria());
 
                             }
                             break;
                             case 2: {
                                 System.out.println("2.- Productos de Farmacia");
                                 System.out.println(p3.toString());
+                                System.out.println( "Precio final con IVA:"+p3.precioPapeleria());
                             }
                             break;
                             case 3: {
 
                                 System.out.println("3.- Productos de Supermercado");
                                 System.out.println(p2.toString());
+                                System.out.println( "Precio final con IVA:"+p2.precioPapeleria());
                                 System.out.println(p4.toString());
+                                System.out.println( "Precio final con IVA:"+p4.precioPapeleria());
                             }
                             break;
 
@@ -401,5 +405,3 @@ public class Main {
     }
 
 }
-
-   
