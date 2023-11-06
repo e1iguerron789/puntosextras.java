@@ -8,6 +8,8 @@ public class Producto {
     private int cantidadminima;
     private double precio;
 
+    private double precioIva;
+
     public String getNombreproducto() {
         return nombreproducto;
     }
@@ -70,6 +72,19 @@ public class Producto {
        precio=pprecio;
 
     }
+    public double precioPapeleria ()
+    {
+        return precioIva=precio*1.16;
+
+    }
+    public double precioSupermercado ()
+    {
+        return precioIva=precio*1.04;
+    }
+    public double precioFarmacia ()
+    {
+        return precioIva=precio*1.12;
+    }
 
     public double dineroObtenido(){
 
@@ -92,12 +107,15 @@ public class Producto {
                 "\nTipo de Producto : Producto de "+ tipo +
                 "\nCantidad actual del producto en la tienda: " + cantidadproducto +
                 "\nCantidad mínima para abastecimiento del producto:" + cantidadminima +
-                "\nPrecio base de venta por unidad.: " + precio +
-                "\nPrecio final con IVA:";
+                "\nPrecio base de venta por unidad.: " + precio ;
+
+
         return p;
     }
 
 
 
 }
+
+
 
